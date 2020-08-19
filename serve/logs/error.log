@@ -1,0 +1,79 @@
+[2020-03-27T14:02:19.979] [ERROR] error - {
+  method: 'PUT',
+  url: '/api/users/putoneuserinfo/1001',
+  body: {
+    u_name: '程老师 ',
+    u_id: '1001',
+    u_password: '123456',
+    u_role: '2',
+    u_sex: '',
+    u_birthday: '1999-03-28T16:00:00.000Z',
+    u_position: '广东广州'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_sex' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'UPDATE `user` SET `u_name`=?,`u_role`=?,`solt`=?,`u_password`=?,`u_id`=?,`u_sex`=?,`u_birthday`=?,`u_position`=? WHERE `u_id` = ?',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'UPDATE `user` SET `u_name`=?,`u_role`=?,`solt`=?,`u_password`=?,`u_id`=?,`u_sex`=?,`u_birthday`=?,`u_position`=? WHERE `u_id` = ?',
+      parameters: [Array]
+    },
+    sql: 'UPDATE `user` SET `u_name`=?,`u_role`=?,`solt`=?,`u_password`=?,`u_id`=?,`u_sex`=?,`u_birthday`=?,`u_position`=? WHERE `u_id` = ?',
+    parameters: [
+      '程老师 ',
+      '2',
+      '47c1520a-3a67-43c1-a87a-7db9a7dd6568',
+      'd13ee0e4a8c71f1636904d6fbf276811',
+      '1001',
+      '',
+      '1999-03-29 00:00:00',
+      '广东广州',
+      '1001'
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>教室占用情况</title>
+</head>
+
+<body>
+
+    <input type="date">
+
+    <div id="container">
+        <div class="title">教室占用情况</div>
+        <div class="table">
+            <table border="1px solid" style="text-align: center;">
+                <thead>
+                    <td>占用表ID</td>
+                    <td>教室名称</td>
+                    <td>容纳人数</td>
+                    <td>是否拥有多媒体</td>
+                    <td>教室占用开始时间</td>
+                    <td>教室占用结束时间</td>
+                    <td>操作</td>
+                </thead>
+                <tbody>
+                    <% for(var i=0;i<data.length;i++){%>
+                    <tr>
+                        <td><%=data[i].o_id%></td>
+                        <td><%=data[i].c_name%></td>
+                        <td><%=data[i].c_person%></td>
+                        <td><%=data[i].c_media%></td>
+                        <td><%=data[i].t_useTime%></td>
+                        <td><%=data[i].t_endTime%></td>
+                        <td><a href="/class/classroom_occupyMessage/delect/<%=data[i].o_id%>">删除</td>
+                    </tr>
+                    <%}%>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- <p></p>
+        <div class="adduser">
+            <div>添加教室</div>
+            <br>
+            <form action="/class/classroom_message/add" method="POST">
+                教室ID：<input type="text" name="c_id" placeholder="教室ID" required>
+                <br></br>
+                教室名称：<input type="text" name="c_name" placeholder="教室名称" required>
+                <br></br>
+                容纳人数：<input type="text" name="c_person" placeholder="容纳人数" required>
+                <br></br>
+                <label for="c_use">是否可用:</label>
+                <select name="c_use" required>
+                    <option value=""></option>
+                    <option value="0">被占用</option>
+                    <option value="1">空闲</option>
+                </select>
+                <br></br>
+                <label for="c_media">是否拥有多媒体:</label>
+                <select name="c_media" required>
+                <option value=""></option>
+                <option value="0">无</option>
+                <option value="1">有</option>
+                </select>
+                <br></br>
+                教室地点：<input type="text" name="c_position" placeholder="教室地点" required>
+                <br></br>
+                <button type="submit">提交</button> <button type="reset">重置</button>
+            </form>
+        </div> -->
+
+
+    </div>
+    
+    
+</body>
+
+</html>

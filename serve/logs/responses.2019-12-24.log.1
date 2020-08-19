@@ -1,0 +1,3530 @@
+[2019-12-24T15:09:55.556] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 49,
+  response: {
+    status: 401,
+    message: 'Unauthorized',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/plain; charset=utf-8',
+      'content-length': '12'
+    },
+    body: 'Unauthorized'
+  }
+}
+[2019-12-24T15:10:21.943] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '林沛鑫', password: '123456' },
+  costTime: 609,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: [Object] }
+  }
+}
+[2019-12-24T15:10:32.608] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1740624158', password: '123456' },
+  costTime: 23,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: [Object] }
+  }
+}
+[2019-12-24T15:10:38.083] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1740624157', password: '123456' },
+  costTime: 32,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T15:10:38.304] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T15:47:46.716] [INFO] response - {
+  method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 63,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '1697'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html>\n' +
+      '<head>\n' +
+      `    <link rel="stylesheet" href='/stylesheets/login.css'>\n` +
+      '    <title>登陆</title>\n' +
+      '</head>\n' +
+      '<body>\n' +
+      '    <div class="header" id="head">\n' +
+      '      <div class="title">XXXX 系统登陆</div>\n' +
+      '    </div>\n' +
+      '          \n' +
+      '    <div class="wrap" id="wrap">\n' +
+      '        <div class="logGet">\n' +
+      '                <!-- 头部提示信息 -->\n' +
+      '                <div class="logD logDtip">\n' +
+      '                    <p class="p1">登录</p>\n' +
+      '                </div>\n' +
+      '                <form action="/users/checkLogin" method="POST">\n' +
+      '                  <!-- 输入框 -->\n' +
+      '                  <div class="lgD">\n' +
+      '                      <input type="text" name="u_id"\n' +
+      '                          placeholder="输入id" />\n' +
+      '                  </div>\n' +
+      '                  <div class="lgD">\n' +
+      '                      <input type="password" name="u_password"\n' +
+      '                          placeholder="输入用户密码" />\n' +
+      '                  </div>\n' +
+      '                  <div class="logC">\n' +
+      '                      <button type="submit">登 录</button>\n' +
+      '                  </div>\n' +
+      '                </form>\n' +
+      '            </div>\n' +
+      '      </div>\n' +
+      '      <div class="footer" id="foot">\n' +
+      '        <div class="copyright">\n' +
+      '          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n' +
+      '          <div class="img">\n' +
+      '              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n' +
+      '          </div>\n' +
+      '          \n' +
+      '          <div class="img">\n' +
+      '              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n' +
+      '          </div>\n' +
+      '            \n' +
+      '          <div class="img">\n' +
+      '            <i class="icon2"></i><span>联系电话：12345678</span>\n' +
+      '          </div>\n' +
+      '       \n' +
+      '       \n' +
+      '        </div>\n' +
+      '          \n' +
+      '      </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-24T15:47:48.637] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-24T15:47:53.540] [INFO] response - {
+  method: 'GET',
+  url: '/a',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-24T15:47:53.704] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-24T15:48:04.943] [INFO] response - {
+  method: 'GET',
+  url: '/123',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-24T15:48:04.980] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-24T17:23:36.869] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 111,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 2, data: [Object] }
+  }
+}
+[2019-12-24T17:23:36.928] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 10,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:23:37.254] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 84,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:23:51.020] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 8,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:23:51.137] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/onetableinfo/1',
+  body: {},
+  costTime: 71,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:23:52.552] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:23:52.647] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 11,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:23:57.486] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:23:57.601] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 9,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:00.271] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:00.403] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroomtimeinfo',
+  body: {},
+  costTime: 41,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:04.064] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:04.146] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 10,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:14.309] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:14.405] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroomtimeinfo',
+  body: {},
+  costTime: 13,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:16.225] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:16.297] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 11,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:17.298] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:17.379] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroomtimeinfo',
+  body: {},
+  costTime: 9,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:20.163] [INFO] response - {
+  method: 'DELETE',
+  url: '/api/classrooms/deletetimetable/7',
+  body: {},
+  costTime: 259,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:24:20.340] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroomtimeinfo',
+  body: {},
+  costTime: 8,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:22.483] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:23.663] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:23.736] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 12,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:30.714] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:30.781] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroomtimeinfo',
+  body: {},
+  costTime: 10,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:46.235] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:46.315] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 9,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:24:50.291] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:51.430] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:24:51.523] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:25:06.172] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 8,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:06.257] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroomtimeinfo',
+  body: {},
+  costTime: 13,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:25:17.180] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:18.203] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:18.271] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 8,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:25:30.594] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 8,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:34.274] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:34.384] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 9,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:25:36.691] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:36.757] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 8,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:25:38.038] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:38.800] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:38.877] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroomtimeinfo',
+  body: {},
+  costTime: 12,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:25:39.555] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:39.622] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 10,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:25:42.889] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:44.477] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:46.188] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:51.796] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:25:51.872] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 11,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:25:59.560] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1740624157', password: '123456' },
+  costTime: 15,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:25:59.625] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 19,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:04.074] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:06.115] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:07.460] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:10.516] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:11.493] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:14.551] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:15.965] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:17.895] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:19.549] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:22.153] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:23.126] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:24.441] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:44.512] [INFO] response - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '1740624157',
+    number: 's',
+    phone: 's',
+    username: 'lin',
+    usetime: '2019-12-19 00:00:00',
+    endtime: '2019-12-17 00:00:00',
+    applytime: '2019-12-24 17:26:41',
+    reason: 's',
+    media: '1'
+  },
+  costTime: 199,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:26:46.519] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:46.549] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 12,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: '' }
+  }
+}
+[2019-12-24T17:26:50.801] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 9,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:50.873] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 15,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: '' }
+  }
+}
+[2019-12-24T17:26:53.957] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:55.200] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:26:55.241] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 17,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: '' }
+  }
+}
+[2019-12-24T17:27:05.864] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 17,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 2, data: [Object] }
+  }
+}
+[2019-12-24T17:27:05.930] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 18,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:06.086] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 16,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:27:09.196] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:09.263] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/onetableinfo/2',
+  body: {},
+  costTime: 12,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:27:19.471] [INFO] response - {
+  method: 'POST',
+  url: '/api/tables/postclass/2',
+  body: { user_id: '1001', class_id: '102', result: '1', table_id: '2' },
+  costTime: 240,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:27:19.492] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:19.561] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:27:26.898] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:26.989] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 10,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:27:31.700] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:31.784] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroomtimeinfo',
+  body: {},
+  costTime: 11,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:27:38.122] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:38.212] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/getallinfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:27:40.478] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:42.425] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:42.491] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/getallinfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:27:44.038] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:45.326] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:45.400] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/getallinfo',
+  body: {},
+  costTime: 11,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:27:46.530] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:48.303] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:49.198] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:50.025] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:27:50.100] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 13,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:28:12.478] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1740624157', password: '123456' },
+  costTime: 42,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:28:12.543] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:28:15.810] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:28:15.849] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 10,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: '' }
+  }
+}
+[2019-12-24T17:28:20.188] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:28:21.142] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:28:21.175] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 10,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: '' }
+  }
+}
+[2019-12-24T17:30:05.213] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1740624157', password: '123456' },
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:30:05.229] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:31:34.625] [INFO] response - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '1740624157',
+    number: '80',
+    phone: '15920327829',
+    username: '林沛鑫',
+    usetime: '2019-12-24 17:30:00',
+    endtime: '2019-12-24 17:35:00',
+    applytime: '2019-12-24 17:31:28',
+    reason: '开会需要',
+    media: '1'
+  },
+  costTime: 153,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:31:36.934] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:31:36.978] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 12,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [classtable] }
+  }
+}
+[2019-12-24T17:31:46.278] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:31:46.974] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:31:50.237] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:07.598] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:11.233] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:12.698] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:14.557] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:15.904] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:16.967] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:19.095] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:19.127] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 11,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [classtable] }
+  }
+}
+[2019-12-24T17:32:22.465] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:25.146] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:26.753] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:28.105] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:29.164] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:30.642] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:30.679] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 11,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [classtable] }
+  }
+}
+[2019-12-24T17:32:31.960] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:32.896] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:34.063] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:34.989] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:44.728] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 8,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 2, data: [Object] }
+  }
+}
+[2019-12-24T17:32:44.781] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 15,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:45.260] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 29,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:32:53.225] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:32:53.279] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/onetableinfo/3',
+  body: {},
+  costTime: 10,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:33:16.511] [INFO] response - {
+  method: 'POST',
+  url: '/api/tables/postclass/3',
+  body: { user_id: '1001', class_id: '101', result: '成功', table_id: '3' },
+  costTime: 165,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:33:16.541] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:33:16.618] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:33:22.311] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:33:22.358] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/onetableinfo/3',
+  body: {},
+  costTime: 12,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:33:23.792] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:33:23.866] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:33:31.593] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:33:31.698] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 8,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:33:41.255] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:33:42.948] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:33:43.028] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroomtimeinfo',
+  body: {},
+  costTime: 8,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:33:52.180] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:33:52.247] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:34:00.885] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 12,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:34:00.967] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/getallinfo',
+  body: {},
+  costTime: 9,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:34:03.508] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:34:03.570] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/getoneuserinfo/1001',
+  body: {},
+  costTime: 6,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:34:06.331] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:34:06.410] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 9,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:34:07.640] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:34:07.700] [INFO] response - {
+  method: 'GET',
+  url: '/api/classrooms/getclassroominfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:34:14.124] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:34:14.189] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/getallinfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:34:18.086] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:34:20.217] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:34:20.328] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-24T17:34:38.422] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1740624157', password: '123456' },
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-24T17:34:38.441] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:34:39.930] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:34:39.975] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 14,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [classtable] }
+  }
+}
+[2019-12-24T17:35:04.688] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 7,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:35:06.556] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:35:06.588] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 16,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: '' }
+  }
+}
+[2019-12-24T17:35:09.394] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:35:09.488] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: 20,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: '' }
+  }
+}
+[2019-12-24T17:35:13.457] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-24T17:35:24.922] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postuser',
+  body: {
+    user_id: '1740624157',
+    password: '123456',
+    name: '',
+    sex: '',
+    birthday: '',
+    position: ''
+  },
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: -1, data: [Object] }
+  }
+}

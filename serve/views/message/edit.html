@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        学号或工号:<%=info.u_id%>
+        <div>编辑用户</div>
+        <br>
+        <form action="/user/message/doedit/<%=info.u_id%>" method="POST">
+            <br></br>
+            用户名字：<input type="text" name="u_name" value="<%=info.u_name%>" required>
+            <br></br>
+            当前身份：
+                        <%if(info.u_role==1){%>
+                        学生
+                        <%}else{%>
+                        老师
+                        <%}%>                                               
+            <br></br>
+                <label for="u_role">修改身份:</label>
+                <select name="u_role">
+                    <option value="1">学生</option>
+                    <option value="2">老师</option>
+                </select>
+
+            <br></br>
+            密码：<input type="password" name="u_password" value="<%=info.u_password%>" required>
+            <br></br>
+            <button type="submit">提交</button> <button type="reset">重置</button>
+
+        </form>
+    
+    </div>
+</body>
+</html>

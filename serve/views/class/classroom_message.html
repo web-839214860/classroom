@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>教室信息管理</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="title">教室信息管理</div>
+        <div class="table">
+            <table border="1px solid" style="text-align: center;">
+                <thead>
+                    <td>教室ID</td>
+                    <td>教室名称</td>
+                    <td>容纳人数</td>
+                    <td>是否可用</td>
+                    <td>是否拥有多媒体</td>
+                    <td>教室地点</td>
+                    <td>操作</td>
+                </thead>
+                <tbody>
+                    <% for(var i=0;i<data.length;i++){%>
+                    <tr>
+                        <td><%=data[i].c_id%></td>
+                        <td><%=data[i].c_name%></td>
+                        <td><%=data[i].c_person%></td>
+                        <td><%if(data[i].c_use==0){%>
+                            被占用
+                            <%}else if(data[i].c_use==1){%>
+                            空闲
+                            <%}%>
+                        </td>
+                         <td><%if(data[i].c_media==0){%>
+                            无
+                            <%}else if(data[i].c_use==1){%>
+                            有
+                            <%}%>
+                        </td>
+                        <td><%=data[i].c_position%></td>
+                        <td><a href="/class/classroom_message/delect/<%=data[i].c_id%>">删除</td>
+                        <td><a href="/class/class_edit/edit/<%=data[i].c_id%>">编辑</td>
+                    </tr>
+                    <%}%>
+                </tbody>
+            </table>
+        </div>
+
+        <p></p>
+        <div class="adduser">
+            <div>添加教室</div>
+            <br>
+            <form action="/class/classroom_message/add" method="POST">
+                教室ID：<input type="text" name="c_id" placeholder="教室ID" required>
+                <br></br>
+                教室名称：<input type="text" name="c_name" placeholder="教室名称" required>
+                <br></br>
+                容纳人数：<input type="text" name="c_person" placeholder="容纳人数" required>
+                <br></br>
+                <label for="c_use">是否可用:</label>
+                <select name="c_use" required>
+                    <option value=""></option>
+                    <option value="0">被占用</option>
+                    <option value="1">空闲</option>
+                </select>
+                <br></br>
+                <label for="c_media">是否拥有多媒体:</label>
+                <select name="c_media" required>
+                <option value=""></option>
+                <option value="0">无</option>
+                <option value="1">有</option>
+                </select>
+                <br></br>
+                教室地点：<input type="text" name="c_position" placeholder="教室地点" required>
+                <br></br>
+                <button type="submit">提交</button> <button type="reset">重置</button>
+            </form>
+        </div>
+
+
+    </div>
+    
+</body>
+
+</html>

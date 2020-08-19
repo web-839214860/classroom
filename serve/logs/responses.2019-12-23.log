@@ -1,0 +1,1049 @@
+[2019-12-23T19:04:00.294] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 3,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:04:02.184] [INFO] response - {
+  method: 'GET',
+  url: '/user/message/delect/1002',
+  body: {},
+  costTime: 2,
+  response: {
+    status: 302,
+    message: 'Found',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      location: '/user/message',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '57'
+    },
+    body: 'Redirecting to <a href="/user/message">/user/message</a>.'
+  }
+}
+[2019-12-23T19:04:02.226] [INFO] response - {
+  method: 'GET',
+  url: '/user/message',
+  body: {},
+  costTime: 33,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '4077'
+    },
+    body: '<!DOCTYPE html>\r\n' +
+      '<html lang="en">\r\n' +
+      '\r\n' +
+      '<head>\r\n' +
+      '    <meta charset="UTF-8">\r\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n' +
+      '\r\n' +
+      '    <title>用户信息管理</title>\r\n' +
+      '</head>\r\n' +
+      '\r\n' +
+      '<body>\r\n' +
+      '    <div id="container">\r\n' +
+      '        <div class="title">用户信息管理</div>\r\n' +
+      '        <div class="table">\r\n' +
+      '            <table border="1px solid" style="text-align: center;">\r\n' +
+      '                <thead>\r\n' +
+      '                    <td>序号</td>\r\n' +
+      '                    <td>学号/工号</td>\r\n' +
+      '                    <td>用户姓名</td>\r\n' +
+      '                    <td>用户身份</td>\r\n' +
+      '                    <td>用户性别</td>\r\n' +
+      '                    <td>用户生日</td>\r\n' +
+      '                    <td>地区</td>\r\n' +
+      '                    <td>操作</td>\r\n' +
+      '                </thead>\r\n' +
+      '                <tbody>\r\n' +
+      '                    \r\n' +
+      '                    <tr>\r\n' +
+      '                        <td>1</td>\r\n' +
+      '                        <td>1001</td>\r\n' +
+      '                        <td>程老师</td>\r\n' +
+      '                        <td>\r\n' +
+      '                            老师\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>\r\n' +
+      '                            男\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>1999-03-29</td>\r\n' +
+      '                        <td>广东广州</td>\r\n' +
+      '                        <td><a href="/user/message/delect/1001">删除</td>\r\n' +
+      '                        <td><a href="/user/message/edit/1001">编辑</td>\r\n' +
+      '                    </tr>\r\n' +
+      '                    \r\n' +
+      '                    <tr>\r\n' +
+      '                        <td>2</td>\r\n' +
+      '                        <td>1740624157</td>\r\n' +
+      '                        <td>林沛鑫</td>\r\n' +
+      '                        <td>\r\n' +
+      '                            学生\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>\r\n' +
+      '                            男\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>1998-06-21</td>\r\n' +
+      '                        <td>广东揭阳</td>\r\n' +
+      '                        <td><a href="/user/message/delect/1740624157">删除</td>\r\n' +
+      '                        <td><a href="/user/message/edit/1740624157">编辑</td>\r\n' +
+      '                    </tr>\r\n' +
+      '                    \r\n' +
+      '                    <tr>\r\n' +
+      '                        <td>3</td>\r\n' +
+      '                        <td>1740624216</td>\r\n' +
+      '                        <td>罗文科</td>\r\n' +
+      '                        <td>\r\n' +
+      '                            学生\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>\r\n' +
+      '                            男\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>1998-05-20</td>\r\n' +
+      '                        <td>广东惠州</td>\r\n' +
+      '                        <td><a href="/user/message/delect/1740624216">删除</td>\r\n' +
+      '                        <td><a href="/user/message/edit/1740624216">编辑</td>\r\n' +
+      '                    </tr>\r\n' +
+      '                    \r\n' +
+      '                </tbody>\r\n' +
+      '            </table>\r\n' +
+      '        </div>\r\n' +
+      '        <p></p>\r\n' +
+      '        <div class="adduser">\r\n' +
+      '            <div>添加用户</div>\r\n' +
+      '            <br>\r\n' +
+      '            <form action="/user/message/sent" method="POST">\r\n' +
+      '                学号或工号：<input type="text" name="u_id" placeholder="学号或工号" required>\r\n' +
+      '                <br></br>\r\n' +
+      '                用户名字：<input type="text" name="u_name" placeholder="用户姓名" required>\r\n' +
+      '                <br></br>\r\n' +
+      '                <label for="u_role">角色:</label>\r\n' +
+      '                <select name="u_role" required>\r\n' +
+      '                    <option value=""></option>\r\n' +
+      '                    <option value="1">学生</option>\r\n' +
+      '                    <option value="2">老师</option>\r\n' +
+      '                </select>\r\n' +
+      '                <br></br>\r\n' +
+      '                密码：<input type="password" name="u_password" placeholder="用户密码" required>\r\n' +
+      '                <br></br>\r\n' +
+      '                <button type="submit">提交</button> <button type="reset">重置</button>\r\n' +
+      '            </form>\r\n' +
+      '        </div>\r\n' +
+      '\r\n' +
+      '\r\n' +
+      '    </div>\r\n' +
+      '    \r\n' +
+      '</body>\r\n' +
+      '\r\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:04:02.259] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:05:40.963] [INFO] response - {
+  method: 'GET',
+  url: '/user/message',
+  body: {},
+  costTime: 132,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '4077'
+    },
+    body: '<!DOCTYPE html>\r\n' +
+      '<html lang="en">\r\n' +
+      '\r\n' +
+      '<head>\r\n' +
+      '    <meta charset="UTF-8">\r\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n' +
+      '\r\n' +
+      '    <title>用户信息管理</title>\r\n' +
+      '</head>\r\n' +
+      '\r\n' +
+      '<body>\r\n' +
+      '    <div id="container">\r\n' +
+      '        <div class="title">用户信息管理</div>\r\n' +
+      '        <div class="table">\r\n' +
+      '            <table border="1px solid" style="text-align: center;">\r\n' +
+      '                <thead>\r\n' +
+      '                    <td>序号</td>\r\n' +
+      '                    <td>学号/工号</td>\r\n' +
+      '                    <td>用户姓名</td>\r\n' +
+      '                    <td>用户身份</td>\r\n' +
+      '                    <td>用户性别</td>\r\n' +
+      '                    <td>用户生日</td>\r\n' +
+      '                    <td>地区</td>\r\n' +
+      '                    <td>操作</td>\r\n' +
+      '                </thead>\r\n' +
+      '                <tbody>\r\n' +
+      '                    \r\n' +
+      '                    <tr>\r\n' +
+      '                        <td>1</td>\r\n' +
+      '                        <td>1001</td>\r\n' +
+      '                        <td>程老师</td>\r\n' +
+      '                        <td>\r\n' +
+      '                            老师\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>\r\n' +
+      '                            男\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>1999-03-29</td>\r\n' +
+      '                        <td>广东广州</td>\r\n' +
+      '                        <td><a href="/user/message/delect/1001">删除</td>\r\n' +
+      '                        <td><a href="/user/message/edit/1001">编辑</td>\r\n' +
+      '                    </tr>\r\n' +
+      '                    \r\n' +
+      '                    <tr>\r\n' +
+      '                        <td>2</td>\r\n' +
+      '                        <td>1740624157</td>\r\n' +
+      '                        <td>林沛鑫</td>\r\n' +
+      '                        <td>\r\n' +
+      '                            学生\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>\r\n' +
+      '                            男\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>1998-06-21</td>\r\n' +
+      '                        <td>广东揭阳</td>\r\n' +
+      '                        <td><a href="/user/message/delect/1740624157">删除</td>\r\n' +
+      '                        <td><a href="/user/message/edit/1740624157">编辑</td>\r\n' +
+      '                    </tr>\r\n' +
+      '                    \r\n' +
+      '                    <tr>\r\n' +
+      '                        <td>3</td>\r\n' +
+      '                        <td>1740624216</td>\r\n' +
+      '                        <td>罗文科</td>\r\n' +
+      '                        <td>\r\n' +
+      '                            学生\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>\r\n' +
+      '                            男\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>1998-05-20</td>\r\n' +
+      '                        <td>广东惠州</td>\r\n' +
+      '                        <td><a href="/user/message/delect/1740624216">删除</td>\r\n' +
+      '                        <td><a href="/user/message/edit/1740624216">编辑</td>\r\n' +
+      '                    </tr>\r\n' +
+      '                    \r\n' +
+      '                </tbody>\r\n' +
+      '            </table>\r\n' +
+      '        </div>\r\n' +
+      '        <p></p>\r\n' +
+      '        <div class="adduser">\r\n' +
+      '            <div>添加用户</div>\r\n' +
+      '            <br>\r\n' +
+      '            <form action="/user/message/sent" method="POST">\r\n' +
+      '                学号或工号：<input type="text" name="u_id" placeholder="学号或工号" required>\r\n' +
+      '                <br></br>\r\n' +
+      '                用户名字：<input type="text" name="u_name" placeholder="用户姓名" required>\r\n' +
+      '                <br></br>\r\n' +
+      '                <label for="u_role">角色:</label>\r\n' +
+      '                <select name="u_role" required>\r\n' +
+      '                    <option value=""></option>\r\n' +
+      '                    <option value="1">学生</option>\r\n' +
+      '                    <option value="2">老师</option>\r\n' +
+      '                </select>\r\n' +
+      '                <br></br>\r\n' +
+      '                密码：<input type="password" name="u_password" placeholder="用户密码" required>\r\n' +
+      '                <br></br>\r\n' +
+      '                <button type="submit">提交</button> <button type="reset">重置</button>\r\n' +
+      '            </form>\r\n' +
+      '        </div>\r\n' +
+      '\r\n' +
+      '\r\n' +
+      '    </div>\r\n' +
+      '    \r\n' +
+      '</body>\r\n' +
+      '\r\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:05:41.017] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 12,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:05:42.372] [INFO] response - {
+  method: 'GET',
+  url: '/user/message/edit/1001',
+  body: {},
+  costTime: 43,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '1262'
+    },
+    body: '<!DOCTYPE html>\r\n' +
+      '<html lang="en">\r\n' +
+      '<head>\r\n' +
+      '    <meta charset="UTF-8">\r\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n' +
+      '    <title>Document</title>\r\n' +
+      '</head>\r\n' +
+      '<body>\r\n' +
+      '    <div>\r\n' +
+      '        学号或工号:1001\r\n' +
+      '        <div>编辑用户</div>\r\n' +
+      '        <br>\r\n' +
+      '        <form action="/user/message/doedit/1001" method="POST">\r\n' +
+      '            <br></br>\r\n' +
+      '            用户名字：<input type="text" name="u_name" value="程老师" required>\r\n' +
+      '            <br></br>\r\n' +
+      '            当前身份：\r\n' +
+      '                        \r\n' +
+      '                        老师\r\n' +
+      '                                                                       \r\n' +
+      '            <br></br>\r\n' +
+      '                <label for="u_role">修改身份:</label>\r\n' +
+      '                <select name="u_role">\r\n' +
+      '                    <option value="1">学生</option>\r\n' +
+      '                    <option value="2">老师</option>\r\n' +
+      '                </select>\r\n' +
+      '\r\n' +
+      '            <br></br>\r\n' +
+      '            密码：<input type="password" name="u_password" value="f19567018163d406f0e737d9e5b114f1" required>\r\n' +
+      '            <br></br>\r\n' +
+      '            <button type="submit">提交</button> <button type="reset">重置</button>\r\n' +
+      '\r\n' +
+      '        </form>\r\n' +
+      '    \r\n' +
+      '    </div>\r\n' +
+      '</body>\r\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:05:42.414] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:06:06.127] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 5,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:06:09.248] [INFO] response - {
+  method: 'GET',
+  url: '/user/message/edit/1740624157',
+  body: {},
+  costTime: 14,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '1274'
+    },
+    body: '<!DOCTYPE html>\r\n' +
+      '<html lang="en">\r\n' +
+      '<head>\r\n' +
+      '    <meta charset="UTF-8">\r\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n' +
+      '    <title>Document</title>\r\n' +
+      '</head>\r\n' +
+      '<body>\r\n' +
+      '    <div>\r\n' +
+      '        学号或工号:1740624157\r\n' +
+      '        <div>编辑用户</div>\r\n' +
+      '        <br>\r\n' +
+      '        <form action="/user/message/doedit/1740624157" method="POST">\r\n' +
+      '            <br></br>\r\n' +
+      '            用户名字：<input type="text" name="u_name" value="林沛鑫" required>\r\n' +
+      '            <br></br>\r\n' +
+      '            当前身份：\r\n' +
+      '                        \r\n' +
+      '                        学生\r\n' +
+      '                                                                       \r\n' +
+      '            <br></br>\r\n' +
+      '                <label for="u_role">修改身份:</label>\r\n' +
+      '                <select name="u_role">\r\n' +
+      '                    <option value="1">学生</option>\r\n' +
+      '                    <option value="2">老师</option>\r\n' +
+      '                </select>\r\n' +
+      '\r\n' +
+      '            <br></br>\r\n' +
+      '            密码：<input type="password" name="u_password" value="681216da298bda04fbf397d58ecb8bde" required>\r\n' +
+      '            <br></br>\r\n' +
+      '            <button type="submit">提交</button> <button type="reset">重置</button>\r\n' +
+      '\r\n' +
+      '        </form>\r\n' +
+      '    \r\n' +
+      '    </div>\r\n' +
+      '</body>\r\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:06:09.279] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:06:10.809] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 4,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:06:42.307] [INFO] response - {
+  method: 'GET',
+  url: '/user/message',
+  body: {},
+  costTime: 112,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '4077'
+    },
+    body: '<!DOCTYPE html>\r\n' +
+      '<html lang="en">\r\n' +
+      '\r\n' +
+      '<head>\r\n' +
+      '    <meta charset="UTF-8">\r\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n' +
+      '\r\n' +
+      '    <title>用户信息管理</title>\r\n' +
+      '</head>\r\n' +
+      '\r\n' +
+      '<body>\r\n' +
+      '    <div id="container">\r\n' +
+      '        <div class="title">用户信息管理</div>\r\n' +
+      '        <div class="table">\r\n' +
+      '            <table border="1px solid" style="text-align: center;">\r\n' +
+      '                <thead>\r\n' +
+      '                    <td>序号</td>\r\n' +
+      '                    <td>学号/工号</td>\r\n' +
+      '                    <td>用户姓名</td>\r\n' +
+      '                    <td>用户身份</td>\r\n' +
+      '                    <td>用户性别</td>\r\n' +
+      '                    <td>用户生日</td>\r\n' +
+      '                    <td>地区</td>\r\n' +
+      '                    <td>操作</td>\r\n' +
+      '                </thead>\r\n' +
+      '                <tbody>\r\n' +
+      '                    \r\n' +
+      '                    <tr>\r\n' +
+      '                        <td>1</td>\r\n' +
+      '                        <td>1001</td>\r\n' +
+      '                        <td>程老师</td>\r\n' +
+      '                        <td>\r\n' +
+      '                            老师\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>\r\n' +
+      '                            男\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>1999-03-29</td>\r\n' +
+      '                        <td>广东广州</td>\r\n' +
+      '                        <td><a href="/user/message/delect/1001">删除</td>\r\n' +
+      '                        <td><a href="/user/message/edit/1001">编辑</td>\r\n' +
+      '                    </tr>\r\n' +
+      '                    \r\n' +
+      '                    <tr>\r\n' +
+      '                        <td>2</td>\r\n' +
+      '                        <td>1740624157</td>\r\n' +
+      '                        <td>林沛鑫</td>\r\n' +
+      '                        <td>\r\n' +
+      '                            学生\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>\r\n' +
+      '                            男\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>1998-06-21</td>\r\n' +
+      '                        <td>广东揭阳</td>\r\n' +
+      '                        <td><a href="/user/message/delect/1740624157">删除</td>\r\n' +
+      '                        <td><a href="/user/message/edit/1740624157">编辑</td>\r\n' +
+      '                    </tr>\r\n' +
+      '                    \r\n' +
+      '                    <tr>\r\n' +
+      '                        <td>3</td>\r\n' +
+      '                        <td>1740624216</td>\r\n' +
+      '                        <td>罗文科</td>\r\n' +
+      '                        <td>\r\n' +
+      '                            学生\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>\r\n' +
+      '                            男\r\n' +
+      '                            \r\n' +
+      '                        </td>\r\n' +
+      '                        <td>1998-05-20</td>\r\n' +
+      '                        <td>广东惠州</td>\r\n' +
+      '                        <td><a href="/user/message/delect/1740624216">删除</td>\r\n' +
+      '                        <td><a href="/user/message/edit/1740624216">编辑</td>\r\n' +
+      '                    </tr>\r\n' +
+      '                    \r\n' +
+      '                </tbody>\r\n' +
+      '            </table>\r\n' +
+      '        </div>\r\n' +
+      '        <p></p>\r\n' +
+      '        <div class="adduser">\r\n' +
+      '            <div>添加用户</div>\r\n' +
+      '            <br>\r\n' +
+      '            <form action="/user/message/sent" method="POST">\r\n' +
+      '                学号或工号：<input type="text" name="u_id" placeholder="学号或工号" required>\r\n' +
+      '                <br></br>\r\n' +
+      '                用户名字：<input type="text" name="u_name" placeholder="用户姓名" required>\r\n' +
+      '                <br></br>\r\n' +
+      '                <label for="u_role">角色:</label>\r\n' +
+      '                <select name="u_role" required>\r\n' +
+      '                    <option value=""></option>\r\n' +
+      '                    <option value="1">学生</option>\r\n' +
+      '                    <option value="2">老师</option>\r\n' +
+      '                </select>\r\n' +
+      '                <br></br>\r\n' +
+      '                密码：<input type="password" name="u_password" placeholder="用户密码" required>\r\n' +
+      '                <br></br>\r\n' +
+      '                <button type="submit">提交</button> <button type="reset">重置</button>\r\n' +
+      '            </form>\r\n' +
+      '        </div>\r\n' +
+      '\r\n' +
+      '\r\n' +
+      '    </div>\r\n' +
+      '    \r\n' +
+      '</body>\r\n' +
+      '\r\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:06:42.355] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 9,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:06:44.872] [INFO] response - {
+  method: 'GET',
+  url: '/user/message/edit/1740624216',
+  body: {},
+  costTime: 11,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '1274'
+    },
+    body: '<!DOCTYPE html>\r\n' +
+      '<html lang="en">\r\n' +
+      '<head>\r\n' +
+      '    <meta charset="UTF-8">\r\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n' +
+      '    <title>Document</title>\r\n' +
+      '</head>\r\n' +
+      '<body>\r\n' +
+      '    <div>\r\n' +
+      '        学号或工号:1740624216\r\n' +
+      '        <div>编辑用户</div>\r\n' +
+      '        <br>\r\n' +
+      '        <form action="/user/message/doedit/1740624216" method="POST">\r\n' +
+      '            <br></br>\r\n' +
+      '            用户名字：<input type="text" name="u_name" value="罗文科" required>\r\n' +
+      '            <br></br>\r\n' +
+      '            当前身份：\r\n' +
+      '                        \r\n' +
+      '                        学生\r\n' +
+      '                                                                       \r\n' +
+      '            <br></br>\r\n' +
+      '                <label for="u_role">修改身份:</label>\r\n' +
+      '                <select name="u_role">\r\n' +
+      '                    <option value="1">学生</option>\r\n' +
+      '                    <option value="2">老师</option>\r\n' +
+      '                </select>\r\n' +
+      '\r\n' +
+      '            <br></br>\r\n' +
+      '            密码：<input type="password" name="u_password" value="53e44ac19b9a479e556770e2dc966b5b" required>\r\n' +
+      '            <br></br>\r\n' +
+      '            <button type="submit">提交</button> <button type="reset">重置</button>\r\n' +
+      '\r\n' +
+      '        </form>\r\n' +
+      '    \r\n' +
+      '    </div>\r\n' +
+      '</body>\r\n' +
+      '</html>'
+  }
+}
+[2019-12-23T19:06:44.914] [INFO] response - {
+  method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 9,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '458'
+    },
+    body: '<!DOCTYPE html>\n' +
+      '<html lang="en">\n' +
+      '\n' +
+      '<head>\n' +
+      '    <meta charset="UTF-8">\n' +
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n' +
+      '    <link rel="stylesheet" href="/stylesheets/error.css">\n' +
+      '    <title>错误信息</title>\n' +
+      '</head>\n' +
+      '\n' +
+      '<body>\n' +
+      '    <div class="content">\n' +
+      '        <h1>抱歉，找不到你的诗和远方了！</h1>\n' +
+      '        \n' +
+      '        <h2>404</h2>\n' +
+      '        \n' +
+      '    </div>\n' +
+      '</body>\n' +
+      '</html>'
+  }
+}
+[2019-12-23T20:39:42.385] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1740624157', password: '123456' },
+  costTime: 194,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}
+[2019-12-23T20:39:42.863] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 74,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-23T20:40:11.189] [INFO] response - {
+  method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 61,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 2, data: [Object] }
+  }
+}
+[2019-12-23T20:40:11.587] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-23T20:40:12.356] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/alltableinfo',
+  body: {},
+  costTime: 114,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Array] }
+  }
+}
+[2019-12-23T20:40:33.111] [INFO] response - {
+  method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 129,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { data: [Object] }
+  }
+}
+[2019-12-23T20:40:33.632] [INFO] response - {
+  method: 'GET',
+  url: '/api/tables/onetableinfo/1',
+  body: {},
+  costTime: 67,
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      vary: 'Origin',
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-credentials': 'true',
+      'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+      'content-type': 'application/json; charset=utf-8'
+    },
+    body: { code: 1, data: [Object] }
+  }
+}

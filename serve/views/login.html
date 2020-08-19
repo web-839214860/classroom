@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href='/stylesheets/login.css'>
+    <title>登陆</title>
+</head>
+<body>
+    <div class="header" id="head">
+      <div class="title">XXXX 系统登陆</div>
+    </div>
+          
+    <div class="wrap" id="wrap">
+        <div class="logGet">
+                <!-- 头部提示信息 -->
+                <div class="logD logDtip">
+                    <p class="p1">登录</p>
+                </div>
+                <form action="/users/checkLogin" method="POST">
+                  <!-- 输入框 -->
+                  <div class="lgD">
+                      <input type="text" name="u_id"
+                          placeholder="输入id" />
+                  </div>
+                  <div class="lgD">
+                      <input type="password" name="u_password"
+                          placeholder="输入用户密码" />
+                  </div>
+                  <div class="logC">
+                      <button type="submit">登 录</button>
+                  </div>
+                </form>
+            </div>
+      </div>
+      <div class="footer" id="foot">
+        <div class="copyright">
+          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>
+          <div class="img">
+              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>
+          </div>
+          
+          <div class="img">
+              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>
+          </div>
+            
+          <div class="img">
+            <i class="icon2"></i><span>联系电话：12345678</span>
+          </div>
+       
+       
+        </div>
+          
+      </div>
+</body>
+</html>

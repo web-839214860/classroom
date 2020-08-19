@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>用户信息管理</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="title">用户信息管理</div>
+        <div class="table">
+            <table border="1px solid" style="text-align: center;">
+                <thead>
+                    <td>序号</td>
+                    <td>学号/工号</td>
+                    <td>用户姓名</td>
+                    <td>用户身份</td>
+                    <td>用户性别</td>
+                    <td>用户生日</td>
+                    <td>地区</td>
+                    <td>操作</td>
+                </thead>
+                <tbody>
+                    <% for(var i=0;i<data.length;i++){%>
+                    <tr>
+                        <td><%=i+1%></td>
+                        <td><%=data[i].u_id%></td>
+                        <td><%=data[i].u_name%></td>
+                        <td><%if(data[i].u_role==1){%>
+                            学生
+                            <%}else if(data[i].u_role==2){%>
+                            老师
+                            <%}%>
+                        </td>
+                        <td><%if(data[i].u_sex==1){%>
+                            男
+                            <%}else if(data[i].u_role==2){%>
+                            女
+                            <%}%>
+                        </td>
+                        <td><%=data[i].u_birthday%></td>
+                        <td><%=data[i].u_position%></td>
+                        <td><a href="/user/message/delect/<%=data[i].u_id%>">删除</td>
+                        <td><a href="/user/message/edit/<%=data[i].u_id%>">编辑</td>
+                    </tr>
+                    <%}%>
+                </tbody>
+            </table>
+        </div>
+        <p></p>
+        <div class="adduser">
+            <div>添加用户</div>
+            <br>
+            <form action="/user/message/sent" method="POST">
+                学号或工号：<input type="text" name="u_id" placeholder="学号或工号" required>
+                <br></br>
+                用户名字：<input type="text" name="u_name" placeholder="用户姓名" required>
+                <br></br>
+                <label for="u_role">角色:</label>
+                <select name="u_role" required>
+                    <option value=""></option>
+                    <option value="1">学生</option>
+                    <option value="2">老师</option>
+                </select>
+                <br></br>
+                密码：<input type="password" name="u_password" placeholder="用户密码" required>
+                <br></br>
+                <button type="submit">提交</button> <button type="reset">重置</button>
+            </form>
+        </div>
+
+
+    </div>
+    
+</body>
+
+</html>

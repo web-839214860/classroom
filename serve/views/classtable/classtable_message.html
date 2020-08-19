@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>教室申请表信息管理</title>
+</head>
+
+<body>
+    <div id="container">
+                <br></br>
+                <a href="/class/classroom_message">查看教室使用情况</a>
+                <a href="/class/classroom_occupyMessage">查看教室占用情况</a>
+                <br></br>
+        <div class="title">教室申请表信息管理</div>
+        <div class="table">
+            <table border="1px solid" style="text-align: center;">
+                <thead>
+                    <td>申请表ID</td>
+                    <td>申请人姓名</td>
+                    <td>申请人学号</td>
+                    <td>手机号码</td>
+                    <td>参加人数</td>
+                    <td>是否需要多媒体</td>
+                    <td>使用教室原因</td>
+                    <td>申请教室时间</td>
+                    <td>使用教室开始时间</td>
+                    <td>使用教室结束时间</td>
+                    <td>审核结果</td>
+                    <td>分配的教室名称</td>
+                    <td>审批人姓名</td>
+                    <td>操作</td>
+                </thead>
+                <tbody>
+                    <% for(var i=0;i<data.length;i++){%>
+                    <tr>
+                        <td><%=data[i].t_id%></td>
+                        <td><%=data[i].t_name%></td>
+                        <td><%=data[i].user_id%></td>
+                        <td><%=data[i].t_contact%></td>
+                        <td><%=data[i].t_joinPeople%></td>
+                        <td><%if(data[i].t_media==0){%>
+                            不需要
+                            <%}else if(data[i].t_media==1){%>
+                            需要
+                            <%}%>
+                            </td>
+                        <td><%=data[i].t_useReason%></td>
+                        <td><%=data[i].t_time%></td>
+                        <td><%=data[i].t_useTime%></td>
+                        <td><%=data[i].t_endTime%></td>
+                        <td><%=data[i].t_result%></td>
+                        <td><%=data[i].t_class%></td>
+                        <td><%=data[i].t_user%></td>
+                        <td><a href='/classtable/class_assign/<%=data[i].t_id%>'>审批教室</td>
+                        <td><a href='/classtable/class_assign_cancel/<%=data[i].t_id%>'>取消审批</td>
+                        <td><a href="/classtable/delect/<%=data[i].t_id%>">删除</td>
+                    </tr>
+                    <%}%>
+                </tbody>
+            </table>
+        </div>
+
+        <p></p>
+        <div class="adduser">
+            <div>添加教室申请表</div>
+            <br>
+            <form action="/classtable/classtable_message/add" method="POST">
+                申请人姓名：<input type="text" name="t_name" placeholder="申请人姓名" required>
+                <br></br>
+                手机号码：<input type="text" name="t_contact" placeholder="手机号码" required>
+                <br></br>
+                参加人数：<input type="text" name="t_joinPeople" placeholder="参加人数" required>
+                <br></br>
+                使用教室原因：<input type="text" name="t_useReason" placeholder="使用教室原因" required>
+                <br></br>
+                申请教室时间：<input type="text" name="t_time" placeholder="申请教室时间" required>
+                <br></br>
+                使用教室开始时间：<input type="text" name="t_useTime" placeholder="使用教室开始时间" required>
+                <br></br>
+                使用教室结束时间：<input type="text" name="t_endTime" placeholder="使用教室结束时间" required>
+                <br></br>
+                <label for="t_media">是否需要多媒体:</label>
+                <select name="t_media" required>
+                <option value=""></option>
+                <option value="0">不需要</option>
+                <option value="1">需要</option>
+                </select>
+                <br></br>
+                <button type="submit">提交</button> <button type="reset">重置</button>
+            </form>
+        </div>
+
+
+    </div>
+    
+</body>
+
+</html>

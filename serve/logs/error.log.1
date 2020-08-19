@@ -1,0 +1,1644 @@
+[2019-12-23T01:08:40.960] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '1740624157',
+    number: '80',
+    phone: '15920327829',
+    username: '林沛鑫',
+    usetime: '2019-12-23 14:00:00',
+    endtime: '2019-12-23 15:30:00',
+    applytime: '2019-12-23 01:08:36',
+    reason: '开会需要',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '林沛鑫',
+      '15920327829',
+      '80',
+      '开会需要',
+      '是',
+      '2019-12-23 01:08:36',
+      '2019-12-23 14:00:00',
+      '2019-12-23 15:30:00',
+      '1740624157'
+    ]
+  }
+}
+[2019-12-23T01:08:52.851] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '1740624157',
+    number: '80',
+    phone: '15920327829',
+    username: '林沛鑫',
+    usetime: '2019-12-23 14:00:00',
+    endtime: '2019-12-23 15:30:00',
+    applytime: '2019-12-23 01:08:36',
+    reason: '开会需要',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '林沛鑫',
+      '15920327829',
+      '80',
+      '开会需要',
+      '是',
+      '2019-12-23 01:08:36',
+      '2019-12-23 14:00:00',
+      '2019-12-23 15:30:00',
+      '1740624157'
+    ]
+  }
+}
+[2019-12-23T01:16:25.533] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '111',
+    number: '2',
+    phone: '156*9',
+    username: '马云',
+    usetime: '2019-12-23 01:16:03',
+    endtime: '2019-12-23 17:38:27',
+    applytime: '2019-12-23 01:16:21',
+    reason: '开会',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '马云',
+      '156*9',
+      '2',
+      '开会',
+      '是',
+      '2019-12-23 01:16:21',
+      '2019-12-23 01:16:03',
+      '2019-12-23 17:38:27',
+      '111'
+    ]
+  }
+}
+[2019-12-23T01:16:29.766] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '111',
+    number: '2',
+    phone: '156*9',
+    username: '马云',
+    usetime: '2019-12-23 01:16:03',
+    endtime: '2019-12-23 17:38:27',
+    applytime: '2019-12-23 01:16:21',
+    reason: '开会',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '马云',
+      '156*9',
+      '2',
+      '开会',
+      '是',
+      '2019-12-23 01:16:21',
+      '2019-12-23 01:16:03',
+      '2019-12-23 17:38:27',
+      '111'
+    ]
+  }
+}
+[2019-12-23T01:17:01.836] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '111',
+    number: '2',
+    phone: '156*9',
+    username: '马云',
+    usetime: '2019-12-23 01:16:03',
+    endtime: '2019-12-23 17:38:27',
+    applytime: '2019-12-23 01:16:21',
+    reason: '开会',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '马云',
+      '156*9',
+      '2',
+      '开会',
+      '是',
+      '2019-12-23 01:16:21',
+      '2019-12-23 01:16:03',
+      '2019-12-23 17:38:27',
+      '111'
+    ]
+  }
+}
+[2019-12-23T01:18:45.683] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '111',
+    number: '20',
+    phone: '159674631450',
+    username: '马云',
+    usetime: '2019-12-24 14:16:03',
+    endtime: '2019-12-24 17:38:27',
+    applytime: '2019-12-24 14:16:21',
+    reason: '开会',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '马云',
+      '159674631450',
+      '20',
+      '开会',
+      '是',
+      '2019-12-24 14:16:21',
+      '2019-12-24 14:16:03',
+      '2019-12-24 17:38:27',
+      '111'
+    ]
+  }
+}
+[2019-12-23T01:19:06.519] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '111',
+    number: '20',
+    phone: '159674631450',
+    username: '马云',
+    usetime: '2019-12-24 14:16:03',
+    endtime: '2019-12-24 17:38:27',
+    applytime: '2019-12-24 14:16:21',
+    reason: '开会',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '马云',
+      '159674631450',
+      '20',
+      '开会',
+      '是',
+      '2019-12-24 14:16:21',
+      '2019-12-24 14:16:03',
+      '2019-12-24 17:38:27',
+      '111'
+    ]
+  }
+}
+[2019-12-23T01:20:07.264] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '111',
+    number: '20',
+    phone: '169745852630',
+    username: '马云',
+    usetime: '2019-12-24 14:00:00',
+    endtime: '2019-12-24 15:00:00',
+    applytime: '2019-12-24 14:00:13',
+    reason: '开',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '马云',
+      '169745852630',
+      '20',
+      '开',
+      '是',
+      '2019-12-24 14:00:13',
+      '2019-12-24 14:00:00',
+      '2019-12-24 15:00:00',
+      '111'
+    ]
+  }
+}
+[2019-12-23T01:21:00.490] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '1740624157',
+    number: '1',
+    phone: '1',
+    username: '1',
+    usetime: '2019-12-04 00:00:00',
+    endtime: '2019-12-11 00:00:00',
+    applytime: '2019-12-23 01:20:57',
+    reason: '1',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '1',
+      '1',
+      '1',
+      '1',
+      '是',
+      '2019-12-23 01:20:57',
+      '2019-12-04 00:00:00',
+      '2019-12-11 00:00:00',
+      '1740624157'
+    ]
+  }
+}
+[2019-12-23T01:21:05.529] [ERROR] error - {
+  method: 'POST',
+  url: '/api/tables/posttable',
+  body: {
+    user_id: '1740624157',
+    number: '1',
+    phone: '1',
+    username: '1',
+    usetime: '2019-12-04 00:00:00',
+    endtime: '2019-12-11 00:00:00',
+    applytime: '2019-12-23 01:20:57',
+    reason: '1',
+    media: '是'
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '是' for column 't_media' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '是' for column 't_media' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '是' for column 't_media' at row 1",
+      sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `classtable` (`t_id`,`t_name`,`t_contact`,`t_joinPeople`,`t_useReason`,`t_media`,`t_time`,`t_useTime`,`t_endTime`,`user_id`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '1',
+      '1',
+      '1',
+      '1',
+      '是',
+      '2019-12-23 01:20:57',
+      '2019-12-04 00:00:00',
+      '2019-12-11 00:00:00',
+      '1740624157'
+    ]
+  }
+}
+[2019-12-23T01:25:15.117] [ERROR] error - {
+  method: 'POST',
+  url: '/api/users/postuser',
+  body: {
+    user_id: '你爹',
+    password: '11',
+    name: '',
+    sex: '',
+    birthday: '',
+    position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_sex' at row 1
+      at Query.formatError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '你爹',
+      'c95fed1af0d963bc4defbba7c89f9df2',
+      '',
+      1,
+      '57aeac46-c44d-4b95-9952-347d08a3bfdb',
+      '',
+      'Invalid date',
+      ''
+    ]
+  }
+}
+[2019-12-24T17:26:04.122] [ERROR] error - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: undefined,
+  err: TypeError: Cannot read property 't_endTime' of null
+      at tableinfo (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\controllers\client\table.js:87:36)
+      at async C:\Users\Administrator\Desktop\2\koaLogin_sequelize\routes\api\tables.js:11:9
+      at async cors (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+      at async C:\Users\Administrator\Desktop\2\koaLogin_sequelize\app.js:57:3
+      at async serve (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-static\index.js:53:9)
+      at async logger (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-logger\index.js:67:7)
+      at async bodyParser (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-bodyparser\index.js:86:5)
+      at async session (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-session\index.js:41:7)
+}
+[2019-12-24T17:26:07.498] [ERROR] error - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: undefined,
+  err: TypeError: Cannot read property 't_endTime' of null
+      at tableinfo (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\controllers\client\table.js:87:36)
+      at async C:\Users\Administrator\Desktop\2\koaLogin_sequelize\routes\api\tables.js:11:9
+      at async cors (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+      at async C:\Users\Administrator\Desktop\2\koaLogin_sequelize\app.js:57:3
+      at async serve (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-static\index.js:53:9)
+      at async logger (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-logger\index.js:67:7)
+      at async bodyParser (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-bodyparser\index.js:86:5)
+      at async session (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-session\index.js:41:7)
+}
+[2019-12-24T17:26:11.533] [ERROR] error - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: undefined,
+  err: TypeError: Cannot read property 't_endTime' of null
+      at tableinfo (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\controllers\client\table.js:87:36)
+      at async C:\Users\Administrator\Desktop\2\koaLogin_sequelize\routes\api\tables.js:11:9
+      at async cors (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+      at async C:\Users\Administrator\Desktop\2\koaLogin_sequelize\app.js:57:3
+      at async serve (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-static\index.js:53:9)
+      at async logger (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-logger\index.js:67:7)
+      at async bodyParser (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-bodyparser\index.js:86:5)
+      at async session (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-session\index.js:41:7)
+}
+[2019-12-24T17:26:23.160] [ERROR] error - {
+  method: 'GET',
+  url: '/api/tables/tableinfo?0=1740624157',
+  body: {},
+  costTime: undefined,
+  err: TypeError: Cannot read property 't_endTime' of null
+      at tableinfo (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\controllers\client\table.js:87:36)
+      at async C:\Users\Administrator\Desktop\2\koaLogin_sequelize\routes\api\tables.js:11:9
+      at async cors (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+      at async C:\Users\Administrator\Desktop\2\koaLogin_sequelize\app.js:57:3
+      at async serve (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-static\index.js:53:9)
+      at async logger (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-logger\index.js:67:7)
+      at async bodyParser (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-bodyparser\index.js:86:5)
+      at async session (C:\Users\Administrator\Desktop\2\koaLogin_sequelize\node_modules\koa-session\index.js:41:7)
+}
+[2020-01-09T11:29:14.519] [ERROR] error - {
+  method: 'POST',
+  url: '/api/users/postuser',
+  body: {
+    user_id: '',
+    password: '',
+    name: '',
+    sex: '',
+    birthday: '',
+    position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_sex' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '',
+      '55a59b7d4f253e927eaefbd18687e7c1',
+      '',
+      1,
+      'b72ec6ee-0ddb-4c91-b4f9-dfb144c68d6e',
+      '',
+      'Invalid date',
+      ''
+    ]
+  }
+}
+[2020-01-09T11:34:43.085] [ERROR] error - {
+  method: 'POST',
+  url: '/api/users/postuser',
+  body: {
+    user_id: '',
+    password: '',
+    name: '',
+    sex: '',
+    birthday: '',
+    position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_sex' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '',
+      'a9c75df490cbe939ece14c56b0e2c2e4',
+      '',
+      1,
+      '4d4a8fb1-1a67-46ac-b8ad-f92fc972db2b',
+      '',
+      'Invalid date',
+      ''
+    ]
+  }
+}
+[2020-01-09T11:37:09.142] [ERROR] error - {
+  method: 'POST',
+  url: '/api/users/postuser',
+  body: {
+    user_id: '',
+    password: '',
+    name: '',
+    sex: '',
+    birthday: '',
+    position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_sex' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '',
+      'a9e91d402a626703173694d34d2d1cce',
+      '',
+      1,
+      '2e150ca0-435f-4f05-b872-f0389040d1a6',
+      '',
+      'Invalid date',
+      ''
+    ]
+  }
+}
+[2020-01-09T11:44:15.467] [ERROR] error - {
+  method: 'POST',
+  url: '/api/users/postuser',
+  body: {
+    user_id: '',
+    password: '',
+    name: '',
+    sex: '',
+    birthday: '',
+    position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_sex' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '',
+      '7aeb7c325022e26060c1ce23ea7ac033',
+      '',
+      1,
+      'bc7f7b35-f9c7-4b01-bab3-6bb132ff6156',
+      '',
+      'Invalid date',
+      ''
+    ]
+  }
+}
+[2020-01-09T11:48:32.839] [ERROR] error - {
+  method: 'POST',
+  url: '/api/users/postuser',
+  body: {
+    user_id: '',
+    password: '',
+    name: '',
+    sex: '',
+    birthday: '',
+    position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_sex' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '',
+      'de7b6ac7fe3356ac166240c01ab5438d',
+      '',
+      1,
+      'b852ef25-b883-4698-8301-085e77c80719',
+      '',
+      'Invalid date',
+      ''
+    ]
+  }
+}
+[2020-01-09T11:51:45.345] [ERROR] error - {
+  method: 'POST',
+  url: '/api/users/postuser',
+  body: {
+    user_id: '',
+    password: '',
+    name: '',
+    sex: '',
+    birthday: '',
+    position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_sex' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '',
+      '1e0c2356cd3be780731dc9de7710de83',
+      '',
+      1,
+      '08aa4979-5b1b-4035-87b6-36ba779adc6b',
+      '',
+      'Invalid date',
+      ''
+    ]
+  }
+}
+[2020-01-09T11:51:57.693] [ERROR] error - {
+  method: 'POST',
+  url: '/api/users/postuser',
+  body: {
+    user_id: '',
+    password: '',
+    name: '',
+    sex: '',
+    birthday: '',
+    position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_sex' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_sex' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_sex' at row 1",
+      sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+      parameters: [Array]
+    },
+    sql: 'INSERT INTO `user` (`id`,`u_id`,`u_password`,`u_name`,`u_role`,`solt`,`u_sex`,`u_birthday`,`u_position`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      '',
+      'c2b07419b638380145411d9662d1f72e',
+      '',
+      1,
+      'b5bf2f65-10ea-4dc2-bb30-7740f57484be',
+      '',
+      'Invalid date',
+      ''
+    ]
+  }
+}
+[2020-03-27T14:00:19.953] [ERROR] error - {
+  method: 'PUT',
+  url: '/api/users/putoneuserinfo/1001',
+  body: {
+    u_name: '123',
+    u_id: '',
+    u_password: '',
+    u_role: '',
+    u_sex: '',
+    u_birthday: '',
+    u_position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_role' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_role' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_role' at row 1",
+      sql: 'UPDATE `user` SET `u_name`=?,`u_role`=?,`solt`=?,`u_password`=?,`u_id`=?,`u_sex`=?,`u_birthday`=?,`u_position`=? WHERE `u_id` = ?',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_role' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_role' at row 1",
+      sql: 'UPDATE `user` SET `u_name`=?,`u_role`=?,`solt`=?,`u_password`=?,`u_id`=?,`u_sex`=?,`u_birthday`=?,`u_position`=? WHERE `u_id` = ?',
+      parameters: [Array]
+    },
+    sql: 'UPDATE `user` SET `u_name`=?,`u_role`=?,`solt`=?,`u_password`=?,`u_id`=?,`u_sex`=?,`u_birthday`=?,`u_position`=? WHERE `u_id` = ?',
+    parameters: [
+      '123',
+      '',
+      '2b8ac771-b44a-47dd-b6f1-2cc2b39c4354',
+      'f48fc381c55a28058b87a03fdf31c2b7',
+      '',
+      '',
+      'Invalid date',
+      '',
+      '1001'
+    ]
+  }
+}
+[2020-03-27T14:00:37.718] [ERROR] error - {
+  method: 'PUT',
+  url: '/api/users/putoneuserinfo/1001',
+  body: {
+    u_name: '林',
+    u_id: '',
+    u_password: '',
+    u_role: '',
+    u_sex: '',
+    u_birthday: '',
+    u_position: ''
+  },
+  costTime: undefined,
+  err: DatabaseError [SequelizeDatabaseError]: Incorrect integer value: '' for column 'u_role' at row 1
+      at Query.formatError (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+      at Execute.handler [as onResult] (E:\移动应用开发\课设\项目\classroom_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+      at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:30:14)
+      at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+      at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+      at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+      at Socket.emit (events.js:209:13)
+      at addChunk (_stream_readable.js:305:12)
+      at readableAddChunk (_stream_readable.js:286:11)
+      at Socket.Readable.push (_stream_readable.js:220:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+    name: 'SequelizeDatabaseError',
+    parent: Error: Incorrect integer value: '' for column 'u_role' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_role' at row 1",
+      sql: 'UPDATE `user` SET `u_name`=?,`u_role`=?,`solt`=?,`u_password`=?,`u_id`=?,`u_sex`=?,`u_birthday`=?,`u_position`=? WHERE `u_id` = ?',
+      parameters: [Array]
+    },
+    original: Error: Incorrect integer value: '' for column 'u_role' at row 1
+        at Packet.asError (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+        at Execute.execute (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\commands\command.js:28:26)
+        at Connection.handlePacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:408:32)
+        at PacketParser.onPacket (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:70:12)
+        at PacketParser.executeStart (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+        at Socket.<anonymous> (E:\移动应用开发\课设\项目\classroom_server\node_modules\mysql2\lib\connection.js:77:25)
+        at Socket.emit (events.js:209:13)
+        at addChunk (_stream_readable.js:305:12)
+        at readableAddChunk (_stream_readable.js:286:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+      code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+      errno: 1366,
+      sqlState: 'HY000',
+      sqlMessage: "Incorrect integer value: '' for column 'u_role' at row 1",
+      sql: 'UPDATE `user` SET `u_name`=?,`u_role`=?,`solt`=?,`u_password`=?,`u_id`=?,`u_sex`=?,`u_birthday`=?,`u_position`=? WHERE `u_id` = ?',
+      parameters: [Array]
+    },
+    sql: 'UPDATE `user` SET `u_name`=?,`u_role`=?,`solt`=?,`u_password`=?,`u_id`=?,`u_sex`=?,`u_birthday`=?,`u_position`=? WHERE `u_id` = ?',
+    parameters: [
+      '林',
+      '',
+      'ac4b27b4-15db-472a-a5cb-d2335ca4fb2f',
+      'd87eee2ab930d180b0febff56beee6f8',
+      '',
+      '',
+      'Invalid date',
+      '',
+      '1001'
+    ]
+  }
+}

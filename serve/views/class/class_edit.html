@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>教室编辑信息</title>
+</head>
+
+<body>
+    <div>
+        教室ID:<%=info.c_id%>
+        教室名称:<%=info.c_name%>
+        容纳人数：<%=info.c_person%>
+        教室地点：<%=info.c_position%>
+        <br></br>
+        <div>编辑教室信息</div>
+        <br>
+        <form action="/class/class_edit/doedit/<%=info.c_id%>" method="POST">
+            当前状态:
+                     <%if(info.c_use==0){%>
+                     被占用
+                     <%}else{%>
+                     空闲
+                     <%}%>    
+            <br></br>
+            <label for="c_use">修改状态:</label>
+            <select name="c_use">
+                <option value="0">被占用</option>
+                <option value="1">空闲</option>
+            </select>
+            <br></br>
+            <button type="submit">提交</button> <button type="reset">重置</button>
+        </form>
+    </div>
+</body>
+
+</html>
